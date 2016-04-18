@@ -1,9 +1,79 @@
 /*
 Theme Name: Portal-Actriz
 Theme URI: http://localhost/~heckenschutze/Portal-Actriz/index.html
-Description: Mi primer tema de WP basado en pagina Portal Actriz.
 Author: Hans-Dieter Buddenberg Blamey
 Author URI: http://localhost/~heckenschutze
+Description: Mi primer tema de WP basado en pagina Portal Actriz.
 Version: 0.0.1
+License: Licencia Pública General de GNU v2 o posterior
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: portalactriz
+
+Este tema, como WordPress, está licenciado bajo la GPL.
+Utilizarlo para hacer algo fresco, divertirse y compartir lo que ha aprendido con otros.
 */
+
+
+
+.commentlist li {
+  list-style: none !important;
+}
+
+
+.comment-body {
+  padding: 15px;
+}
+
+.comment-author {
+  margin-top: 5px;
+}
+
+.reply,  .commentmetadata {
+  font-size: 0.9em;
+}
+
+
+.depth-1, .depth-2, .depth-3, .depth-4 {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.depth-1, .depth-3 {
+  background-color: #fafafa;
+}
+
+.depth-2, .depth-4 {
+   background-color: #fff;
+}
+
+.comment-author-eSandra {
+  border: 3px solid #eaeaea;
+  border-left:3px solid #fbc356;
+}
+
+.depth-1 {
+   margin: 20px 0;
+}
+/* Respuesta a comentarios*/
+
+
+.depth-2 {
+  margin:2% 5% !important;
+}
+
+.depth-3 {
+   margin: 2% 7% !important;
+}
+
+
+.depth-4 {
+  margin:2% 5% 4% 10% !important;
+}0
+1
++
+#comment, #author, #email {
+  border-radius: 4px;
+  border:2px solid #ccc;
+}
 
