@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es"><!-- <html <?php language_attributes(); ?>> -->
+<head>
+  <meta charset="UTF-8"><!-- <meta charset="<?php bloginfo('charset'); ?>" /> -->
+  <meta http-equiv="Content-Type" content="text/html"><!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+
+  <!-- Mostrar el título de la página seguido del nombre del blog -->
+  <title>Template | Portal Wordpress</title>
+
+  <!-- Definir viewport para dispositivos web móbiles -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1" />
+	
+	<!-- Plantilla de Estilos -->
+  <link rel="stylesheet" media="all" type="text/css" href="style.css" /><!-- <link rel="stylesheet" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> -->
+  <link rel="stylesheet" media="all" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="css/responsive.css" />
+	
+  <!-- Enlace a su favicon -->
+	<link rel="shortcut icon" href="favicon.ico" /><!-- <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" /> -->
+  
+  <!-- Scripts -->
+		<!-- Jquery -->
+		<script src="js/jquery2-git.min.js"></script>
+		<!-- Slideshow -->
+		<script src="js/jquery.slides.min.js"></script>
+	
+	<!-- Funciones -->
+  <script>
+    $(function(){
+      $("#slideshow").slidesjs({
+        height: 300,
+				navigation: false
+      });
+    });
+  </script>
+	
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<p>Mi Blog</p><span>Hans Buddenberg</span>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Acerca de</a></li>
+				<li><a href="#">Contacto</a></li>
+				<li><a href="#">Pagina Ejemplo</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="main">
+		<div id="no-slide">
+			<section id="slideshow">
+				<div class="slide">
+					<img class="thumb" src="http://lorempixel.com/470/300/">
+					<article>
+						<hgroup><h2><a href="#">Titulo en nuestro articulo</a></h2></hgroup>
+						<p class="date">02 de mayo de 2016 en <a href="#">Categoria 1</a></p>
+						<p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at mi nec velit sodales rhoncus ac venenatis risus. Proin maximus, dui vitae fermentum convallis, odio diam bibendum dolor, ac tincidunt neque lectus vel massa. Mauris eu luctus orci, vel blandit erat. Cras nec ipsum dignissim, varius dolor in, aliquet justo. Pellentesque porta dignissim erat, nec interdum eros malesuada sed. Donec gravida nulla sed elementum euismod. Donec molestie tincidunt nisi, at blandit odio laoreet sit amet. Aliquam scelerisque, erat nec iaculis mattis, eros elit interdum metus, eget vulputate mauris lectus vel massa. Sed maximus dui quis eleifend ultrices. Praesent iaculis ante in finibus facilisis. Cras euismod faucibus enim, non sagittis libero auctor quis. Duis interdum tellus sapien, at lacinia nulla lacinia nec. Duis fringilla metus vel massa posuere facilisis. </p>
+					</article>
+				</div>
+				<div class="slide">
+					<img class="thumb" src="http://lorempixel.com/470/300/">
+					<article>
+						<hgroup><h2><a href="#">Titulo en nuestro articulo</a></h2></hgroup>
+						<p class="date">02 de mayo de 2016 en <a href="#">Categoria 1</a></p>
+						<p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at mi nec velit sodales rhoncus ac venenatis risus. Proin maximus, dui vitae fermentum convallis, odio diam bibendum dolor, ac tincidunt neque lectus vel massa. Mauris eu luctus orci, vel blandit erat. Cras nec ipsum dignissim, varius dolor in, aliquet justo. Pellentesque porta dignissim erat, nec interdum eros malesuada sed. Donec gravida nulla sed elementum euismod. Donec molestie tincidunt nisi, at blandit odio laoreet sit amet. Aliquam scelerisque, erat nec iaculis mattis, eros elit interdum metus, eget vulputate mauris lectus vel massa. Sed maximus dui quis eleifend ultrices. Praesent iaculis ante in finibus facilisis. Cras euismod faucibus enim, non sagittis libero auctor quis. Duis interdum tellus sapien, at lacinia nulla lacinia nec. Duis fringilla metus vel massa posuere facilisis. </p>
+					</article>
+				</div>
+			</section>
+		</div>
+		
+		<section class="articles_list">
+			<article>
+				<img class="thumb" src="http://lorempixel.com/300/200/">
+				<hgroup><h2><a href="#">Titulo en nuestro articulo</a></h2></hgroup>
+				<p class="date">02 de mayo de 2016 en <a href="#">Categoria 1</a></p>
+				<p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at mi nec velit sodales rhoncus ac venenatis risus. Proin maximus, dui vitae fermentum convallis, odio diam bibendum dolor, ac tincidunt neque lectus vel massa. Mauris eu luctus orci, vel blandit erat. Cras nec ipsum dignissim, varius dolor in, aliquet justo. Pellentesque porta dignissim erat, nec interdum eros malesuada sed. Donec gravida nulla sed elementum euismod. Donec molestie tincidunt nisi, at blandit odio laoreet sit amet. Aliquam scelerisque, erat nec iaculis mattis, eros elit interdum metus, eget vulputate mauris lectus vel massa. Sed maximus dui quis eleifend ultrices. Praesent iaculis ante in finibus facilisis. Cras euismod faucibus enim, non sagittis libero auctor quis. Duis interdum tellus sapien, at lacinia nulla lacinia nec. Duis fringilla metus vel massa posuere facilisis. </p>
+			</article>
+			<article>
+				<img class="thumb" src="http://lorempixel.com/300/200/">
+				<hgroup><h2><a href="#">Titulo en nuestro articulo</a></h2></hgroup>
+				<p class="date">02 de mayo de 2016 en <a href="#">Categoria 1</a></p>
+				<p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at mi nec velit sodales rhoncus ac venenatis risus. Proin maximus, dui vitae fermentum convallis, odio diam bibendum dolor, ac tincidunt neque lectus vel massa. Mauris eu luctus orci, vel blandit erat. Cras nec ipsum dignissim, varius dolor in, aliquet justo. Pellentesque porta dignissim erat, nec interdum eros malesuada sed. Donec gravida nulla sed elementum euismod. Donec molestie tincidunt nisi, at blandit odio laoreet sit amet. Aliquam scelerisque, erat nec iaculis mattis, eros elit interdum metus, eget vulputate mauris lectus vel massa. Sed maximus dui quis eleifend ultrices. Praesent iaculis ante in finibus facilisis. Cras euismod faucibus enim, non sagittis libero auctor quis. Duis interdum tellus sapien, at lacinia nulla lacinia nec. Duis fringilla metus vel massa posuere facilisis. </p>
+			</article>
+			<article>
+				<img class="thumb" src="http://lorempixel.com/300/200/">
+				<hgroup><h2><a href="#">Titulo en nuestro articulo</a></h2></hgroup>
+				<p class="date">02 de mayo de 2016 en <a href="#">Categoria 1</a></p>
+				<p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at mi nec velit sodales rhoncus ac venenatis risus. Proin maximus, dui vitae fermentum convallis, odio diam bibendum dolor, ac tincidunt neque lectus vel massa. Mauris eu luctus orci, vel blandit erat. Cras nec ipsum dignissim, varius dolor in, aliquet justo. Pellentesque porta dignissim erat, nec interdum eros malesuada sed. Donec gravida nulla sed elementum euismod. Donec molestie tincidunt nisi, at blandit odio laoreet sit amet. Aliquam scelerisque, erat nec iaculis mattis, eros elit interdum metus, eget vulputate mauris lectus vel massa. Sed maximus dui quis eleifend ultrices. Praesent iaculis ante in finibus facilisis. Cras euismod faucibus enim, non sagittis libero auctor quis. Duis interdum tellus sapien, at lacinia nulla lacinia nec. Duis fringilla metus vel massa posuere facilisis. </p>
+			</article>
+			<article>
+				<img class="thumb" src="http://lorempixel.com/300/200/">
+				<hgroup><h2><a href="#">Titulo en nuestro articulo</a></h2></hgroup>
+				<p class="date">02 de mayo de 2016 en <a href="#">Categoria 1</a></p>
+				<p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at mi nec velit sodales rhoncus ac venenatis risus. Proin maximus, dui vitae fermentum convallis, odio diam bibendum dolor, ac tincidunt neque lectus vel massa. Mauris eu luctus orci, vel blandit erat. Cras nec ipsum dignissim, varius dolor in, aliquet justo. Pellentesque porta dignissim erat, nec interdum eros malesuada sed. Donec gravida nulla sed elementum euismod. Donec molestie tincidunt nisi, at blandit odio laoreet sit amet. Aliquam scelerisque, erat nec iaculis mattis, eros elit interdum metus, eget vulputate mauris lectus vel massa. Sed maximus dui quis eleifend ultrices. Praesent iaculis ante in finibus facilisis. Cras euismod faucibus enim, non sagittis libero auctor quis. Duis interdum tellus sapien, at lacinia nulla lacinia nec. Duis fringilla metus vel massa posuere facilisis. </p>
+			</article>
+		</section>
+		
+		<aside>
+			<section class="widget">
+				<h3>Widget</h3>
+				<ul>
+					<li><a href="#">Lorem  Ipsum</a></li>
+					<li><a href="#">Lorem  Ipsum</a></li>
+					<li><a href="#">Lorem  Ipsum</a></li>
+					<li><a href="#">Lorem  Ipsum</a></li>
+					<li><a href="#">Lorem  Ipsum</a></li>
+				</ul>
+			</section>
+			<section class="widget">
+				<h3>Widget</h3>
+				<ul>
+					<li><a href="#">Lorem  Ipsum</a></li>
+					<li><a href="#">Lorem  Ipsum</a></li>
+					<li><a href="#">Lorem  Ipsum</a></li>
+					<li><a href="#">Lorem  Ipsum</a></li>
+					<li><a href="#">Lorem  Ipsum</a></li>
+				</ul>
+			</section>
+		</aside>
+	</section>
+	
+	<footer>
+		<section class="ft_widget">
+			<p class="copyright">Copyright @ Hans Buddenberg 2016</p>
+		</section>
+	</footer>
+</body>
+</html>

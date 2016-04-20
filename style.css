@@ -11,69 +11,217 @@ Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, 
 Text Domain: portalactriz
 
 Este tema, como WordPress, está licenciado bajo la GPL.
-Utilizarlo para hacer algo fresco, divertirse y compartir lo que ha aprendido con otros.
 */
 
+<<<<<<< HEAD
+/* -- Fuentes -- */
+/*UniverslStd*/
+@font-face {
+  font-family: 'UniverslStd';
+	src: url('fonts/universltstd-cn-webfont.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+	src: url('fonts/universltstd-cn-webfont.eot'); /* IE9 Compat Modes */
+	src: url('fonts/universltstd-cn-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			 url('fonts/universltstd-cn-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+	font-weight: normal;
+	font-style: normal;
+}
+/*hypatiasanspro*/
+@font-face {
+  font-family: 'HypatiaSansProRegular';
+	src: url('fonts/hypatiasanspro-regular-webfont.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+	src: url('fonts/hypatiasanspro-regular-webfont.eot'); /* IE9 Compat Modes */
+	src: url('fonts/hypatiasanspro-regular-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			 url('fonts/hypatiasanspro-regular-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+	font-weight: normal;
+	font-style: normal;
+}
+/*BlessedDay*/
+@font-face {
+    font-family: 'BlessedDay';
+    src: url('fonts/blesd___-webfont.eot');
+    src: url('fonts/blesd___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/blesd___-webfont.woff') format('woff'),
+         url('fonts/blesd___-webfont.ttf') format('truetype'),
+         url('fonts/blesd___-webfont.svg#blessed_dayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+/* -- Estilos Generales -- */
 
-.commentlist li {
-  list-style: none !important;
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background:#191919;
+	font-size: 12pt;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+header, #main, footer {
+	width: 85%;/*ancho*/
+	max-width: 960px;/*ancho maximo*/
+	margin: 0px auto;
+}
+
+a {
+	color: #bf2222;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* -- Header -- */
+header {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	width: 85%;
+}
+
+header #logo {
+	width: 40%;
+	float: left;
+}
+
+header #logo p {
+	font-family: 'BlessedDay';
+	font-size: 6rem;
+	font-weight: 500;
+	text-align: left;
+	color: #fff;
+}
+
+header #logo span {
+	text-align: center;
+	width: 100%;
+	display: block;
+	position: relative;
+	font-family: 'BlessedDay';
+	font-weight: 400;
+	font-size: 2rem;
+	right: 20px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+header nav {
+	width: 60%;
+	float: right;
+	padding: 10px 0px;
+	margin-top: 30px;
+}
+
+header nav ul {
+	float: right;
+}
+
+header nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+header nav ul li a {
+	font-family: 'BlessedDay';
+	font-weight: 300;
+	font-size: 2.3rem;
+	color:  #fff;
+}
+
+header nav ul li a:hover {
+	color:  #bf2222;
+}
+
+/* -- Main -- */
+#main {
+	overflow: hidden;
+}
+
+/* -- Slideshow -- */
+#main #slideshow {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#main #slideshow .thumb {
+	width: 49%;
+	float: left;
+	margin-right: 2%;
+}
+
+#main #slideshow article {
+	float: left;
+	font-family: 'Open Sans', arial, helvetica, sans-serif;
+	font-size: 1rem;
+	text-align: justify;
+	width: 49%;
+	color: #ffffff;
+}
+
+#main #slideshow article h2 {
+	font-family: 'Raleway', helvetica,arial,sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: left;
+}
+
+#main #slideshow article .date {
+	font-family:  'Raleway', helvetica,arial,sans-serif;
+	font-size: .8rem;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #777777;
+}
+
+#main #slideshow .slidesjs-pagination li {
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+#main #slideshow .slidesjs-pagination li a {
+	width: 20px;
+	height: 20px;
+	display: block;
+	font-size: 0pt;
 }
 
 
-.comment-body {
-  padding: 15px;
+#main #slideshow .slidesjs-pagination li .active {
+	background: #333333;
+
 }
 
-.comment-author {
-  margin-top: 5px;
-}
-
-.reply,  .commentmetadata {
-  font-size: 0.9em;
-}
-
-
-.depth-1, .depth-2, .depth-3, .depth-4 {
-  border: 1px solid #eaeaea;
-  border-radius: 4px;
-}
-
-.depth-1, .depth-3 {
-  background-color: #fafafa;
-}
-
-.depth-2, .depth-4 {
-   background-color: #fff;
-}
-
-.comment-author-eSandra {
-  border: 3px solid #eaeaea;
-  border-left:3px solid #fbc356;
-}
-
-.depth-1 {
-   margin: 20px 0;
-}
-/* Respuesta a comentarios*/
-
-
-.depth-2 {
-  margin:2% 5% !important;
-}
-
-.depth-3 {
-   margin: 2% 7% !important;
+/* -- MAIN -- */
+#main #articles_list {
+	clear: both;
+	width: 75%;
+	float: left;
 }
 
 
-.depth-4 {
-  margin:2% 5% 4% 10% !important;
-}0
-1
-+
-#comment, #author, #email {
-  border-radius: 4px;
-  border:2px solid #ccc;
+#main #articles_list article {
+	margin-bottom: 40px;
+	margin-right: 4%;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #333333;
+	overflow: hidden;
+}
+
+#main #articles_list article .thumb {
+	width: 30%;
+	margin-right: 4%;
+	float: left;
+	margin-bottom: 2%;
 }
 
